@@ -1,4 +1,4 @@
-class Post < ApplicationRecord
+class Recruit < ApplicationRecord
   mount_uploader :file, ImagesUploader
 
  def to_meta_tags

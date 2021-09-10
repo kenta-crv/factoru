@@ -1,0 +1,57 @@
+- set_meta_tags  title: @column.title
+- set_meta_tags  keyword: @column.keyword
+- set_meta_tags  description: @column.description
+br
+br
+#column-detail.tops-wrapper
+  .fr-view
+	  h1.headline-first  = @column.title
+    = @column.heading_1.url
+    - if @column.file_1?
+      .image_column  = image_tag @column.file_1.url
+	  p#book_content  = @column.content_1.html_safe
+
+    = @column.heading_2.url
+    - if @column.file_2?
+      .image_column  = image_tag @column.file_2.url
+	  p#book_content  = @column.content_2.html_safe
+
+    = @column.heading_3.url
+    - if @column.file_3?
+      .image_column  = image_tag @column.file_3.url
+	  p#book_content  = @column.content_3.html_safe
+
+    = @column.heading_4.url
+    - if @column.file_4?
+      .image_column  = image_tag @column.file_4.url
+	  p#book_content  = @column.content_4.html_safe
+
+    = @column.heading_5.url
+    - if @column.file_5?
+      .image_column  = image_tag @column.file_5.url
+	  p#book_content  = @column.content_5.html_safe
+
+    = @column.heading_6.url
+    - if @column.file_6?
+      .image_column  = image_tag @column.file_6.url
+	  p#book_content  = @column.content_6.html_safe
+
+    = @column.heading_7.url
+    - if @column.file_7?
+      .image_column  = image_tag @column.file_7.url
+	  p#book_content  = @column.content_7.html_safe
+
+    = @column.heading_8.url
+    - if @column.file_8?
+      .image_column  = image_tag @column.file_8.url
+	  p#book_content  = @column.content_8.html_safe
+
+    = @column.heading_9.url
+    - if @column.file_9?
+      .image_column  = image_tag @column.file_9.url
+	  p#book_content  = @column.content_9.html_safe
+
+    = @column.heading_10.url
+    - if @column.file_10?
+      .image_column  = image_tag @column.file_10.url
+    p#book_content  = @column.content_10.html_safe
