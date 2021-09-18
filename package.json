@@ -1,5 +1,7 @@
 {
   "name": "eatery",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "froala-editor": "^4.0.5"
+  }
 }

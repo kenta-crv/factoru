@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_28_072229) do
+ActiveRecord::Schema.define(version: 2021_09_18_104155) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -146,6 +146,44 @@ ActiveRecord::Schema.define(version: 2021_08_28_072229) do
     t.boolean "send_mail_flag", default: false
     t.string "word"
     t.index ["company_id"], name: "index_estimates_on_company_id"
+  end
+
+  create_table "guides", force: :cascade do |t|
+    t.string "title"
+    t.string "kategory"
+    t.string "description"
+    t.string "heading_1"
+    t.string "file_1"
+    t.text "content_1"
+    t.string "heading_2"
+    t.string "file_2"
+    t.text "content_2"
+    t.string "heading_3"
+    t.string "file_3"
+    t.text "content_3"
+    t.string "heading_4"
+    t.string "file_4"
+    t.text "content_4"
+    t.string "heading_5"
+    t.string "file_5"
+    t.text "content_5"
+    t.string "heading_6"
+    t.string "file_6"
+    t.text "content_6"
+    t.string "heading_7"
+    t.string "file_7"
+    t.text "content_7"
+    t.string "heading_8"
+    t.string "file_8"
+    t.text "content_8"
+    t.string "heading_9"
+    t.string "file_9"
+    t.text "content_9"
+    t.string "heading_10"
+    t.string "file_10"
+    t.text "content_10"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "lists", force: :cascade do |t|
