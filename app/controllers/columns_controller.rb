@@ -10,6 +10,7 @@ before_action :authenticate_admin!, except: [:index, :show]
 
   def new
     @column = Column.new
+    render :layout => "froala"
   end
 
   def create
