@@ -76,7 +76,37 @@ before_action :authenticate_admin!, except: [:index, :show]
       :content_9, #本文
       :heading_10, #見出し
       :file_10, #ファイル
-      :content_10 #本文
+      :content_10, #本文
+      :heading_11, #見出し
+      :file_11, #ファイル
+      :content_11, #本文
+      :heading_12, #見出し
+      :file_12, #ファイル
+      :content_12, #本文
+      :heading_13, #見出し
+      :file_13, #ファイル
+      :content_13, #本文
+      :heading_14, #見出し
+      :file_14, #ファイル
+      :content_14, #本文
+      :heading_15, #見出し
+      :file_15, #ファイル
+      :content_15, #本文
+      :heading_16, #見出し
+      :file_16, #ファイル
+      :content_16, #本文
+      :heading_17, #見出し
+      :file_17, #ファイル
+      :content_17, #本文
+      :heading_18, #見出し
+      :file_18, #ファイル
+      :content_18, #本文
+      :heading_19, #見出し
+      :file_19, #ファイル
+      :content_19, #本文
+      :heading_20, #見出し
+      :file_20, #ファイル
+      :content_20 #本文
       )
   end
 end
