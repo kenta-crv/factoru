@@ -63,8 +63,8 @@ br
     - if @column.file_10?
       .image_column  = image_tag @column.file_10.url
   p#book_content  = @column.display_content_10.html_safe
+
   .fr-view
-    h1.headline-first  = @column.title
     = @column.display_heading_11.html_safe
     - if @column.file_11?
       .image_column  = image_tag @column.file_11.url
