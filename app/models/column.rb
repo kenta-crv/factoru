@@ -1,6 +1,7 @@
 class Column < ApplicationRecord
   DELETE_TEXT_1 = "Powered by"
   DELETE_TEXT_2 = "Froala Editor"
+  DELETE_TEXT_3 = "<p><></p>"
   mount_uploader :file_1, ImagesUploader
   mount_uploader :file_2, ImagesUploader
   mount_uploader :file_3, ImagesUploader

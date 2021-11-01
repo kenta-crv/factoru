@@ -1340,7 +1340,7 @@ nav.globalMenuSp.active {
     background: #f4f4f4;/*背景色*/
     border-left: solid 5px $main_color;/*左線*/
     border-bottom: solid 3px #d7d7d7;/*下線*/
-    margin:0 20px;
+    margin:50px 30px 40px;
     @media screen and ( max-width:479px ){
       font-size: 16px;
       line-height:30px;
@@ -1349,7 +1349,7 @@ nav.globalMenuSp.active {
 
   h3 {
     background: linear-gradient(transparent 70%, #a7d6ff 70%);
-    margin:20px 30px;
+    margin:50px 30px 40px;
     @media screen and ( max-width:479px ){
       font-size: 14px;
     }

@@ -24,6 +24,7 @@ before_action :authenticate_admin!, except: [:index, :show]
 
   def edit
     @column = Column.find(params[:id])
+    render :layout => "froala"
   end
 
   def destroy
