@@ -7,10 +7,10 @@ Rails.application.configure do
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
   address: 'smtp3.gmoserver.jp',
-  domain: 'comicomi.cc',
+  domain: 'factoru.jp',
   port: 587,
-  user_name: 'info@comicomi.cc',
-  password: 'NV2BW#x23',
+  user_name: 'info@factoru.jp',
+  password: 'S3o1zdZ#',
   authentication: 'plain',
   enable_starttls_auto: true
   }

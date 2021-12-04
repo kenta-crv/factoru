@@ -1,0 +1,156 @@
+- set_meta_tags  title: '人材紹介・人材派遣一括比較見積もりで最適な人材を探すなら｜人材紹介・派遣のComicomi'
+- set_meta_tags  keyword: '一括見積り,比較,人材紹介,最安値'
+- set_meta_tags  description: '人材紹介・人材派遣一括比較見積もりで最適な人材を探すなら人材紹介・派遣のComicomi。複数企業の比較を行うことで最安値の企業を簡単に探すことが出来ます。'
+/#トップ
+br
+br
+
+.back-image-index.back-image-top
+  .row
+    .col-xs-6
+      br
+      br
+      form
+       input#mySearch[type="search" name="q" class="window" placeholder="エリア"]
+      | ×
+      form
+       input#mySearch[type="search" name="q" class="window" placeholder="職種"]
+      | ×
+      form
+       input#mySearch[type="search" name="q" class="window" placeholder="条件"]
+      br
+      | ×
+      = link_to "求人を検索", "#",class:"btn btn-primary"
+    .col-xs-6
+        br
+        .index-3
+         | 工場専門求人サイトなら
+         br
+         | 『factoru』
+        p.push
+         span
+           | \ カンタン60秒登録! /
+        =link_to '/estimates/new' do
+         =image_tag 'click3.png', width: '100%', class: 'center'
+
+.row#anchor.top-wrapper
+ .col-sm-8
+     h2.headline
+        | 地域から求人を検索
+     .row.address
+      .col-sm-1
+       .btn.btn-primary 北海道・東北
+       .btn.btn-default 北海道
+       .btn.btn-default 秋田県
+       .btn.btn-default 青森県
+       .btn.btn-default 岩手県
+       .btn.btn-default 山形県
+       .btn.btn-default 宮城県
+       .btn.btn-default 福島県
+      .col-sm-1
+       .btn.btn-primary 甲信越・北陸
+       .btn.btn-default 石川県
+       .btn.btn-default 富山県
+       .btn.btn-default 福井県
+       .btn.btn-default 新潟県
+       .btn.btn-default 山梨県
+       .btn.btn-default 長野県
+      .col-sm-1
+       .btn.btn-primary 関東
+       .btn.btn-default 東京都
+       .btn.btn-default 神奈川県
+       .btn.btn-default 埼玉県
+       .btn.btn-default 千葉県
+       .btn.btn-default 群馬県
+       .btn.btn-default 茨城県
+       .btn.btn-default 栃木県
+      .col-sm-1
+       .btn.btn-primary 東海
+       .btn.btn-default 愛知県
+       .btn.btn-default 静岡県
+       .btn.btn-default 三重県
+       .btn.btn-default 岐阜県
+      .col-sm-1
+       .btn.btn-primary 関西
+       .btn.btn-default 大阪府
+       .btn.btn-default 京都府
+       .btn.btn-default 兵庫県
+       .btn.btn-default 滋賀県
+       .btn.btn-default 奈良県
+       .btn.btn-default 和歌山県
+      .col-sm-1
+       .btn.btn-primary 中国・四国
+       .btn.btn-default 広島県
+       .btn.btn-default 岡山県
+       .btn.btn-default 鳥取県
+       .btn.btn-default 島根県
+       .btn.btn-default 山口県
+       .btn.btn-default 愛媛県
+       .btn.btn-default 高知県
+       .btn.btn-default 徳島県
+       .btn.btn-default 香川県
+      .col-sm-1
+       .btn.btn-primary 九州
+       .btn.btn-default 福岡県
+       .btn.btn-default 長崎県
+       .btn.btn-default 大分県
+       .btn.btn-default 佐賀県
+       .btn.btn-default 熊本県
+       .btn.btn-default 宮崎県
+       .btn.btn-default 鹿児島県
+       .btn.btn-default 沖縄県
+
+     h2.headline
+        | 詳細検索
+     table.company
+      col[width="20%"]
+      col[width="30%"]
+      col[width="20%"]
+      col[width="30%"]
+      tbody
+        tr
+          th[colspan="4"]
+            | 検索
+        tr
+          th
+            | 会社名
+          td
+            = search_field :company_cont, type: "text"
+          th
+            | 担当者名
+          td
+            = search_field :calls_user_user_name_cont, type: "text"
+        tr
+          th
+            | 電話番号
+          td
+            = search_field :tel_cont, type: "text"
+          th
+            | 検索条件
+          td
+            = search_field :industry_cont, type: "text"
+        tr
+          th
+            | 架電回数
+          td
+            = search_field :calls_count_lt, type: "number"
+          th
+            | 住所
+          td
+        tr
+          th
+            | 電話番号有りのみ表示
+          td
+            = search_field :tel, {type: 'checkbox', checked: true }
+          th
+            | SFA
+          td
+            = search_field :choice_cont, type: "text"
+        tr
+          th
+            | 未コール
+          td
+            = search_field :calls_id_null, type: 'checkbox', value: 'true'
+          th
+            | 最終コール状態
+          td

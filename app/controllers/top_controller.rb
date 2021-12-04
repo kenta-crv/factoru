@@ -9,16 +9,13 @@ class TopController < ApplicationController
   def guide
   end
 
-  def special
+  def recruit
   end
 
   def faq
   end
 
   def co
-  end
-
-  def question
   end
 
 end

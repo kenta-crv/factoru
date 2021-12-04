@@ -34,16 +34,20 @@ Rails.application.routes.draw do
   resources :members, only: [:show]
 
 
-  root to: 'columns#index' #トップページ
-  #get 'business' => 'top#business'
-  #各種LPページ
-  #get 'guide' => 'top#guide' #企業側LP
-  #特集
-  #get 'special' => 'top#special'
-  #get 'faq' => 'top#faq'
+  root to: 'top#index' #トップページ
+  get 'recruit' => 'top#recruit' #ユーザー側LP
+  get 'guide' => 'top#guide' #企業側LP
+  get 'business' => 'top#business'
+  get 'faq' => 'top#faq'
   get 'co' => 'top#co'
   #get 'question' => 'top#question'
+  #特集
+  #get 'special' => 'top#special'
 
+  #問い合わせフォーム
+  get '/contact' => 'contact#index'
+  post '/confirm' => 'contact#confirm'
+  post '/thanks' => 'contact#thanks'
 
   #企業側アカウント
   #resources :companies do
@@ -81,11 +85,6 @@ Rails.application.routes.draw do
   #    get :room, path: '/room/:uri_token'
   #  end
   #end
-
-  #問い合わせフォーム
-  #get '/contact' => 'contact#index'
-  #post '/confirm' => 'contact#confirm'
-  #post '/thanks' => 'contact#thanks'
 
   resources :recruits
   resources :columns

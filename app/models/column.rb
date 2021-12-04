@@ -150,4 +150,13 @@ class Column < ApplicationRecord
  def display_heading_20
    self.heading_20.delete(DELETE_TEXT_1).delete(DELETE_TEXT_2)
  end
+
+ @@kategory_status = [
+   ["工場コラム","工場コラム"],
+   ["面接・採用","面接・採用"],
+   ["工場の収入","工場の収入"],
+ ]
+ def self.KategoryStatus
+   @@kategory_status
+ end
 end

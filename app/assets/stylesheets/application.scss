@@ -72,7 +72,7 @@ z-index:150;
     }
     #dropmenu li{
      position: relative;
-     width: 13.5%;
+     width: 16%;
      float: left;
      text-align: center;
     }
@@ -145,73 +145,13 @@ main {
 
 
                                   /*  メイン画像  */
-.back-image-app {
-  background-image: url('subbase.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  padding-bottom:50px;
-  margin-top:-22px;
-}
-.back-image {
-  text-align:center;
-    .box2 {
-     padding: 1vw 4.5vw 0.3vw;
-     display:inline-block;
-     background:red;
-           p {
-           color: #FFF;/*文字色*/
-           font-weight: bold;
-           font-size:2.0vw;
-             }
-      }
-      .face-1 {
-          font-size:4.0vw;
-          font-weight:bold;
-          margin-top:30px;
-          color:$asort_color;
-          text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
-      }
-      .face-2 {
-          font-size:3.6vw;
-          font-weight:bold;
-      }
-      .face-3 {
-          font-size:7.0vw;
-          font-weight:bold;
-          color:$asort_color;
-          text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
-      }
-      .face-4 {
-          font-size:2.0vw;
-          font-weight:bold;
-          text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
-          line-height:4.0vw;
-      }
-      .face-price {
-          font-size:3.0vw;
-          font-weight:bold;
-          color:orange;
-          margin:-10px 0 -25px;
-          margin-top:20px;
-          margin-bottom:0px;
-      }
-      .face-conversion {
-          font-size:3.0vw;
-          font-weight:bold;
-          color:red;
-      }
- }
-
-
 
  .back-image-top {
-   background-image: url('base3.png');
+   background-image: url('main.webp');
    background-size: 100%;
+   margin:0 60px;
    background-repeat: no-repeat;
    vertical-align: middle;
-   padding-bottom:50px;
-   margin-top:-22px;
 }
  .back-image-index {
    text-align:center;
@@ -686,7 +626,6 @@ background-color:$sub_color;
 
 .top-wrapper {
   margin:0 40px -50px;
-  text-align:left;
    .float-image{
      float:left;
      margin:0 20px 20px 0px;
@@ -904,67 +843,6 @@ ul.cp_list li:after {
 
 
 
- /*  Top Wrapper  */
-.top-wrapper {
-  padding-bottom: 70px;
-  position:relative;
-    /*タイトル*/
-    .heading {
-      text-align:center;
-      color: #666;
-    }
-    h2.head {
-      position: relative;
-      background:$main_color;
-      line-height: 1.4;
-      padding: 0.25em 0.5em;
-      margin: 2em 0 0.5em;
-      border-radius: 0 5px 5px 5px;
-      color:white;
-      font-weight:bold;
-      font-size:18px;
-    }
-
-    h2.head:after {
-      /*タブ*/
-      position: absolute;
-      font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
-      content: '\f00c Check';
-      background: $asort_color;
-      color: #fff;
-      left: 0px;
-      bottom: 100%;
-      border-radius: 5px 5px 0 0;
-      padding: 3px 7px 1px;
-      font-size: 0.7em;
-      line-height: 1;
-      letter-spacing: 0.05em
-    }
-
-
-  .box {
-      padding: 0.5em 1em;
-      margin: 2em 0;
-      font-weight: bold;
-      color: #6091d3;/*文字色*/
-      background: #FFF;
-      border: solid 3px #6091d3;/*線*/
-      border-radius: 10px;/*角の丸み*/
-  }
-  .box p {
-      margin: 0;
-      padding: 0;
-  }
-  .text {
-    padding-top:8px;
-    font-size:15px;
-    color:#333;
-  }
-}
-
-.harf {
-  width:50%;
-}
 
 
 
@@ -1019,7 +897,7 @@ nav.globalMenuSp.active {
     display: block;
     position: fixed;    /* bodyに対しての絶対位置指定 */
     right: 13px;
-    top: 12px;
+    top: 30px;
     width: 42px;
     height: 51px;
     cursor: pointer;
@@ -1176,8 +1054,8 @@ nav.globalMenuSp.active {
 
 
 .problem {
-  margin:10px;
   font-size:16px;
+
 }
 
 
@@ -1370,4 +1248,33 @@ nav.globalMenuSp.active {
 .image_column {
   text-align:center;
   margin:30px 0 50px;
+}
+
+
+/*検索窓*/
+.window {
+  width:80%;
+  height:40px;
+  padding:5px;
+  margin:3px;
+  margin:12px 0;
+  text-align:center;
+  size:24px;
+  color:black;
+}
+
+.index-wrapper{
+margin-top:50px;
+}
+
+.address{
+  width:170%;
+  margin:0 5px;
+  text-align:center;
+
+  .font {
+    text-align:center;
+    margin:10px;
+
+  }
 }
