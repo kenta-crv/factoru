@@ -7,7 +7,7 @@ br
     h1.headline-first  = @column.title
     = @column.display_heading_1.html_safe
     - if @column.file_1?
-      .image_column  = image_tag @column.file_1.url, width:"600px";
+      .image_column  = image_tag @column.file_1.url, width:"600px", alt: @column.title
 	p#book_content  = @column.display_content_1.html_safe
 
   .fr-view
