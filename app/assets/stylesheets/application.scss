@@ -147,8 +147,8 @@ main {
                                   /*  メイン画像  */
 
  .back-image-top {
-   background-image: url('main.webp');
-   background-size: 100%;
+   background-image: url('base.webp');
+   background-size: 90%;
    margin:0 60px;
    background-repeat: no-repeat;
    vertical-align: middle;
@@ -156,11 +156,12 @@ main {
  .back-image-index {
    text-align:center;
    .index-3 {
-       font-size:3.8vw;
+       font-size:3.6vw;
        font-weight:bold;
        line-height:7vw;
        color:$asort_color;
        text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
+       .red   {font-size:150%;}
    }
    /*イエローライン*/
    .push {
