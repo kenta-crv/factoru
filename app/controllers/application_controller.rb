@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   include SessionHelper
   before_action :set_host
+  before_action :set_footer
+
 
   # 例外処理
 
@@ -10,6 +12,10 @@ class ApplicationController < ActionController::Base
 
    def set_host
       Rails.application.routes.default_url_options[:host] = request.host_with_port
+   end
+
+   def set_footer
+     @columns = Column.all
    end
 
    def render_404

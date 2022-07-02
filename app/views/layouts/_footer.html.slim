@@ -1,0 +1,16 @@
+br
+br
+/# inquiry image
+.row
+  .col-sm-12.center
+    =link_to "/contact", :target=>["_blank"]   do
+      =image_tag 'question.webp', width: '60%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
+br
+footer
+  h3 【工場記事一覧】
+
+  .row.left
+    - @columns.each do |column|
+      .col-xs-6.height
+       = link_to column.title, column_path(column.id)
+       br

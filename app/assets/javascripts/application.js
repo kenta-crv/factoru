@@ -10,20 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
-//= require_tree .
+// = require jquery
+// = require jquery_ujs
+// = require turbolinks
+// = require_tree .
 
-$(function() {
-    $('.navToggle').click(function() {
-        $(this).toggleClass('active');
 
-        if ($(this).hasClass('active')) {
-            $('.globalMenuSp').addClass('active');
-        } else {
-            $('.globalMenuSp').removeClass('active');
-        }
-    });
-});
+$("#hoge").css("color","red")
 
 // jsを再読み込みさせたいページで使う（/companies/pay）
 $(document).on("turbolinks:load", function () {
