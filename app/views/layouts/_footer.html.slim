@@ -9,7 +9,7 @@ br
 footer
   h3 【工場記事一覧】
 
-  .row.left
+  h4.row.left
     - @columns.each do |column|
       .col-xs-6.height
        = link_to column.title, column_path(column.id)

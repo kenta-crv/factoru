@@ -156,7 +156,7 @@ main {
  .back-image-index {
    text-align:center;
    .index-3 {
-       font-size:3.6vw;
+       font-size:3.4vw;
        font-weight:bold;
        line-height:7vw;
        color:$asort_color;
@@ -186,7 +186,7 @@ main {
    /*イエローライン*/
    .push {
        text-align:center;
-       font-size:4.3vw;
+       font-size:4.0vw;
        color:#F27200;
        font-weight:bold;
        width:100%;
@@ -1332,4 +1332,11 @@ footer {
    .height {
      margin-top:10px;
    }
+}
+
+h1.header {
+  font-size:14px;
+  text-align:center;
+  color:white;
+  border-radius: 10px;
 }
